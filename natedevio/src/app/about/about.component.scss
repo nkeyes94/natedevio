@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+// * Import monsterrat
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.section-body{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(-45deg, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);;
+  background-size: 400% 400%;
+  position: absolute;
+  animation: animate 7.5s ease-in-out infinite;
+  justify-content: center;
+  align-items: center;
+}
+.section-body2{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #7649fe 62%, #5643fd 80%, #0c164f 87%, #1d1135 100%);;
+  background-size: 400% 400%;
+  position: relative;
+  animation: animate 7.5s ease-in-out infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-body3{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(-45deg, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);;
+  background-size: 400% 400%;
+  animation: animate 7.5s ease-in-out infinite;
+}
+
+.title-text{
+  color: #fff;
+  background: rgba(255,255,255,.2);
+  padding: 20px;
+  font-size: 50px;
+  border-radius: 10px;
+  font: 400 1em/1.5 "neuton";
+}
+
+@keyframes animate{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+
+.profile-picture{
+  /* * circled and smaller */
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  /* * centered */
+  margin: 0 auto;
+  /* * border */
+  border: 5px solid #fff;
+  /* * shadow */
+  box-shadow: 0 0 0 7px rgba(0,0,0,.1);
+
+  border-radius: 50%;
+}
+
+.pic-container{
+  /* * centered */
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+/* * Code text, on hover show, else hide */
+.code-image{
+}
+
+.code-image:hover{
+}
+
+.info{
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.info:hover{
+  border: #3f51b1 2px solid;
+}
+
+.info h1{
+  /* * Center on image */
+  margin: 0 auto;
+  /* * Font size */
+  font-size: 40px;
+  /* * Font color */
+  color: #fff;
+  /* * Font weight */
+  font-weight: 700;
+  /* * Font family */
+  font-family: 'Poppins', sans-serif;
+  /* * Text shadow */
+  text-shadow: 0 0 10px rgba(0,0,0,.2);
+  /* * center */
+  text-align: center;
+}
+
+.slick-item{
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  /* * center */
+  text-align: center;
+
+}
+
+.extra-small-text{
+  font-size: 10px;
+}
+
+.name-title{
+  font-size: 15vh
+}
+
+
+.body-text{
+  color: black;
+  padding: 20px;
+  font-size: 50px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px;
+}
+
+
+ .body2 {  text-align: center; margin: 0 }
+
+.p-text {
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	display: inline-block;
+	border: 4px double rgba(255,255,255,.25);
+	border-width: 4px 0;
+	padding: 1.5em 0em;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	width: 40em;
+	margin: 0 0 0 -20em;
+  color:#000;
+}
+
+.body-22 {
+  background-color: #090d00;
+  color: rgba(255, 255, 255, 0.25);
+  text-align: center;
+  margin: 0;
+  // * Set the font to google monsterrat
+  font-family: 'Montserrat', sans-serif;
+  font: 'Montserrat', sans-serif;
+ } 
+ 
+ .p-4 {
+  text-transform: uppercase;
+  transform-origin: center;
+  letter-spacing: .5em;
+  display: inline-block;
+  border: 4px double rgba(255, 255, 255, 0.25);
+  border-width: 4px 0;
+  padding: 1.5em 0em;
+  position: absolute;
+  width: 20cm;
+  font-family: "arial";
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+ }
+ 
+ span {
+  font: 700 5em/1 "oswald", sans-serif;
+  display: block;
+  letter-spacing: 0;
+  padding: .25em 0 .325em;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+  background-size: 400% 400%;
+  background-image: linear-gradient(to right, #3f51b1, #fff989, #b6fcfe);
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  animation: rainbow 5s ease infinite;
+ }
+ 
+ @keyframes rainbow {
+  0%, 100% {
+   background-position: 0% 50%;
+  }
+  50% {
+   background-position: 100% 50%;
+  }
+ }
+
+ body {
+  text-align: center;
+}
+
+svg {
+  margin-top: -30px;
+}
+
+#code-cover-screen {
+  animation: scrollCodeIn 4s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes scrollCodeIn {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(180px);
+    opacity: 1;
+  }
+}
+
+#scrolling-code {
+  animation: scrollCode 3s 1.65s linear infinite;
+}
+
+#scrolling-code-2 {
+  animation: scrollCode2 3s 1.65s linear infinite;
+  transform: translateY(87px);
+}
+
+@keyframes scrollCode {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  49.99% {
+    transform: translateY(-80px);
+    opacity: 1;
+  }
+  50% {
+    transform: translatey(87px);
+    opacity: 0;
+  }
+  50.01% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scrollCode2 {
+  0% {
+    transform: translateY(87);
+    opacity: 1;
+  }
+  49.99% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  99.98% {
+    transform: translatey(-80px);
+    opacity: 1;
+  }
+  99.99% {
+    transform: translateY(87);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+
+  
+}
+
+.svg-container {
+  position: relative;
+  padding-bottom: 50.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  bottom: -10%;
+  }
+
+.form-card{
+  /* * centered */
+  margin: 0 auto;
+  /* * width */
+  width: 50vh;
+  /* * background color */
+  background-color: transparent;
+  /* * border */
+  border: 5px solid #fff opacify($color: #000000, $amount: 0);
+  /* * shadow */
+  box-shadow: 0 0 0 7px rgba(0,0,0,.1);
+  transform: translateY(50%);
+}
+
+// * Input, make this have less opacity
+#input {
+  opacity: 0.5;
+}
+
+.text-center{
+  // * Set font to monsterrat
+  font-family: 'Montserrat', sans-serif;
+}
+
+.accordion{
+  opacity: 0.3;
+}
+
+.accordion-text{
+  // * Set font to monsterrat
+  font-family: 'Montserrat', sans-serif;
+  // Font size
+  font-size: 15px;
+}
+
+// * Content container
+//  * Content should not go outside of this
+.content-container{
+  // * Center
+  text-align: center;
+  max-height: 45vh;
+}
+
+.content-text{
+  // * This is content for the carousel, set 3 rows spaced and centered
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // * Set font to monsterrat
+  font-family: 'Montserrat', sans-serif;
+  // * Font size
+  font-size: 15px;
+  // * Padding
+  padding: 10px;
+}
+
+.content {
+  width: 33%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+}
+
+.panel-description-text{
+  // * Set font to monsterrat
+  font-family: 'Montserrat', sans-serif;
+  // * Font size
+  font-size: 15px;
+  // * Center
+  text-align: center;
+}
+
+mat-grid-tile {
+  background: lightblue;
+}
+
+.scroll-list{
+  // * Allow scrolling
+  overflow-y: scroll;
+  max-height: 30vh;
+}

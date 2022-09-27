@@ -1,0 +1,325 @@
+@import '~fullpage.js/dist/fullpage.min.css';
+.label-text{
+    font-size: 1.2em;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 0.5rem;
+}
+
+.example-card {
+    /* * Should be a rectangle, spaced evenly */
+    width: 20%;
+    height: 500px;
+    max-height: 500px;
+    margin: 10px;
+  }
+
+  .card-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  
+
+  .carousel-container {
+    /* * Place at top of page without using flex */
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+
+  .code-icon {
+    height: 125px;
+    max-height: 125px;
+    max-width: 125px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  /* * Code image - Should all be uniformly sized */
+  .code-image {
+    height: 75%;
+    max-height: 75%;
+    max-width: 75%;
+    width: 75%;
+    padding: 10px;
+    margin: 1px;
+  }
+
+  .code-image:hover {
+    border: 2px solid black;
+    opacity: 0.5;
+  }
+
+  .icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .rectangle-card {
+    width: 100%;
+    height: 100%;
+  }
+
+  .small-icon {
+    width: 50px;
+  }
+
+  .card-side {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .info-text {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    width: 80%;
+    padding-bottom: 10px;
+  }
+
+  .info-text-small {
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    width: 80%;
+    padding-bottom: 10px;
+  }
+  .example-viewport {
+    height: 250px;
+    height: 500px;
+    border: 1px solid black;
+  }
+  
+  .example-item {
+    height: 50px;
+  }
+
+  .card-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 95%;
+    top: 0;
+  }
+
+  /* * Grid container, I want this to fill out the entire section */
+  .grid-container {
+    display: grid;
+    width: 100%;
+    height: 95%;
+    top: 0%;
+  }
+
+  .profileImage{
+    max-width: 75%;
+  }
+
+  /* * Profile img, make this a circle, max it out at 250px */
+  .profileImage {
+    border-radius: 50%;
+    max-width: 250px;
+    max-height: 250px;
+  }
+
+  .center-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slick-carousel{
+    width: 100%;
+    height: 100%;
+  }
+
+  :root{
+    --red: 255;
+    --green: 0;
+    --blue: 0;
+  }
+  
+  body{
+    background: #000000;
+  }
+  
+  .wrapper{
+    width: 99vw;
+    height: 99vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .shadow img{
+    width: 100%;
+    z-index: -1;
+  }
+  
+  .shadow{
+    width: 255px;
+    height: 255px;
+    position: relative;
+    background-image: linear-gradient(140deg, rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255));
+    background-size: 300% 300%;
+    box-shadow: 0;
+    animation: gradient 5s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  
+  .myBlack{
+      width: 248px;
+    height: 248px;
+    position: relative;
+    background: #000000;
+    z-index: 3;
+    border-radius: 50%;
+  }
+  
+  .shadow::before,
+  .shadow::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    background: inherit;
+    opacity: .4;
+  }
+  
+  .shadow::before {
+    filter: blur(2em);
+  }
+  
+  .shadow::after {
+    filter: blur(2em);
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .centered-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bg-1{
+    margin:0;
+    padding:0;
+    font-family:"arial",heletica,sans-serif;
+    font-size:12px;
+      background: #2980b9 url('/assets/bg/bg1.png') repeat 0 0;
+    -webkit-animation: 10s linear 0s normal none infinite animate;
+    -moz-animation: 10s linear 0s normal none infinite animate;
+    -ms-animation: 10s linear 0s normal none infinite animate;
+    -o-animation: 10s linear 0s normal none infinite animate;
+    animation: 10s linear 0s normal none infinite animate;
+   
+  }
+
+  .bg-2{
+    margin:0;
+    padding:0;
+    font-family:"arial",heletica,sans-serif;
+    font-size:12px;
+      background: #2980b9 url('/assets/bg/bg2.png') repeat 0 0;
+    -webkit-animation: 10s linear 0s normal none infinite animate;
+    -moz-animation: 10s linear 0s normal none infinite animate;
+    -ms-animation: 10s linear 0s normal none infinite animate;
+    -o-animation: 10s linear 0s normal none infinite animate;
+    animation: 10s linear 0s normal none infinite animate;
+  }
+
+  .bg-3{
+    margin:0;
+    padding:0;
+    font-family:"arial",heletica,sans-serif;
+    font-size:12px;
+      background: #2980b9 url('/assets/bg/bg3.png') repeat 0 0;
+    -webkit-animation: 10s linear 0s normal none infinite animate;
+    -moz-animation: 10s linear 0s normal none infinite animate;
+    -ms-animation: 10s linear 0s normal none infinite animate;
+    -o-animation: 10s linear 0s normal none infinite animate;
+    animation: 10s linear 0s normal none infinite animate;
+  }
+
+  .bg-4{
+    margin:0;
+    padding:0;
+    font-family:"arial",heletica,sans-serif;
+    font-size:12px;
+      background: #2980b9 url('/assets/bg/bg4.png') repeat 0 0;
+    -webkit-animation: 10s linear 0s normal none infinite animate;
+    -moz-animation: 10s linear 0s normal none infinite animate;
+    -ms-animation: 10s linear 0s normal none infinite animate;
+    -o-animation: 10s linear 0s normal none infinite animate;
+    animation: 10s linear 0s normal none infinite animate;
+  }
+
+  .bg-5 {
+    margin:0;
+    padding:0;
+    font-family:"arial",heletica,sans-serif;
+    font-size:12px;
+      background: #2980b9 url('/assets/bg/bg5.png') repeat 0 0;
+    -webkit-animation: 10s linear 0s normal none infinite animate;
+    -moz-animation: 10s linear 0s normal none infinite animate;
+    -ms-animation: 10s linear 0s normal none infinite animate;
+    -o-animation: 10s linear 0s normal none infinite animate;
+    animation: 10s linear 0s normal none infinite animate;
+  }
+   
+  @-webkit-keyframes animate {
+    from {background-position:0 0;}
+    to {background-position: 500px 0;}
+  }
+   
+  @-moz-keyframes animate {
+    from {background-position:0 0;}
+    to {background-position: 500px 0;}
+  }
+   
+  @-ms-keyframes animate {
+    from {background-position:0 0;}
+    to {background-position: 500px 0;}
+  }
+   
+  @-o-keyframes animate {
+    from {background-position:0 0;}
+    to {background-position: 500px 0;}
+  }
+   
+  @keyframes animate {
+    from {background-position:0 0;}
+    to {background-position: 500px 0;}
+  }
+
