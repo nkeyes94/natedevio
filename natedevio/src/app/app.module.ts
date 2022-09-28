@@ -37,6 +37,22 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatTabsModule } from '@angular/material/tabs';
 import { HttpClientModule } from '@angular/common/http';
 import {MatExpansionModule} from '@angular/material/expansion'; 
+import {MatSlideToggleModule} from '@angular/material/slide-toggle'; 
+import {MatRadioModule} from '@angular/material/radio'; 
+
+// ? PrimeNG
+import { ButtonModule } from 'primeng/button';
+import { CardModule } from 'primeng/card';
+import { InputTextModule } from 'primeng/inputtext';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import { ToastModule } from 'primeng/toast';
+import { MessageService } from 'primeng/api';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
+import { CarouselModule } from 'primeng/carousel';
+import {RadioButtonModule} from 'primeng/radiobutton';
+
+// ? Mapbox
+import { NgxMapboxGLModule } from 'ngx-mapbox-gl';
 // ? ------------------------------------------------------------------------------------------------------------
 
 // * Routing
@@ -80,7 +96,20 @@ const routes: Routes = [
     SlickCarouselModule,
     ReactiveFormsModule,
     HttpClientModule,
-    MatExpansionModule
+    MatExpansionModule,
+    ButtonModule,
+    CardModule,
+    InputTextModule,
+    InputTextareaModule,
+    ToastModule,
+    ProgressSpinnerModule,
+    CarouselModule,
+    NgxMapboxGLModule.withConfig({
+      accessToken: 'pk.eyJ1IjoibmtleWVzIiwiYSI6ImNqeHJuaW54NDA2MXEzZm1yYnZ5dW85bGIifQ.5bp-rkNWdhNCEwHkYKt5aA'
+    }),
+    MatSlideToggleModule,
+    RadioButtonModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]

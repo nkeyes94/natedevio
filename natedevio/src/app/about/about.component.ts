@@ -31,6 +31,7 @@ export class AboutComponent implements OnInit {
     message: ['', Validators.required],
   });
   config: any;
+  images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
   fullpage_api: any;
   slick: any;
   panelOpenState = false;
@@ -76,6 +77,7 @@ export class AboutComponent implements OnInit {
   ngOnInit(): void {
     // * Console log the slick object
     console.log(this.slick);
+
   }
 
   getRef(fullPageRef: any) {
@@ -89,6 +91,40 @@ export class AboutComponent implements OnInit {
     dots: true,
     autoplay: true,
     autoplaySpeed: 2000,
+    adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      }
+    ],
   };
 
   techs = [
